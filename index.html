@@ -4,152 +4,173 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <style>
-     table,th,tr,td,form{
-     border: 1px solid black
-
-     }
-
-    </style>
+   <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- teste -->
-<h1>exemplos de utilizacao das tags</h1>~
 
-<h2>apresentaçao das listas</h2>
+    <header>
+        <img src="Captura de tela 2024-06-14 134254.png" alt="">
+        <nav>
+            <a href="listas">Tags de Listas</a>
+            <a href="linha">Tags de Quebra de Linha</a>
+            <a href="tabelas">Tags Tabelas</a>
+            <a href="formularios">Tags de Formulários</a>
+            <a href="">Tags de Divisões</a>
+        </nav>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ex officia at ratione doloremque,
-soluta ipsum error maiores omnis quidem nihil laborum culpa ab! At necessitatibus ipsam aperiam nobis aut.</p>
-
-<p>lista ordenadada</p>
-
-<ol type="A">
-   <li>coisa</li>
-   <li>coisa</li>
-   <li>coisa</li>
-   <li>segunda coisa</li>
-</ol>
-
-<h3>listas nao ordenadas</h3>
-<ol> 
-
-   <ul>coisa</ul>
-   <ul>coisa</ul>
-   <ul>coisa</ul>
-
-  
-</ol>
-
-<h3>continuacao das listas ordenadas</h3>
-<ol type="A" start="5">
-<li>coisa</li>
-<li>coisa</li>
-<li>coisa</li>
-</ol>
-<h3>listas de definicao</h3>
-<dl>
-    <dt>cafe</dt>
-    <dd>bebida, normalmente quente, forte rica em cafeina,adoçado ou nao</dd>
-    <dt>agua</dt>
-    <dd>liquido primordial a vida, sem agua nao ha cafe</dd>
- </dl>
-
-<h2>apresentacao tabela</h2>
-<table>
-  
-    <th>coluna1</th>
-    <th>coluna2</th>
-    <th>coluna3</th>
-  
- <tr>
-<td>info linha col1</td>
-<td>info linha col2</td>
-<td>info linha col3</td>
- </tr>
-
- <tr>
-   <td>info linha col1</td>
-   <td>info linha col2</td>
-   <td>info linha col3</td>
- </tr>
-
- <tr>
-  <td colspan="2">info linha 3 col1/2</td>
-  <td>info linha col3</td>
- </tr>
-
- <tr>
- <td rowspan="2">info linha4/5 col1</td>
- <td>info linha4 col2</td>
- <td>info linha4 col3</td>
-
- <tr>
-<td>info linha5 col2</td>
-<td>info linha5 col3</td>
- </tr>
- </tr>
-</table>
-
-<h2>apresentacao de formulario</h2>
-
-<form action="">
-<label for="meuid">
-    rotulo da infomacao a ser jogada
-</label>
-<br>
-<input type="text" id="meuid">
+    </header>
 
 
-<label for="numero"></label>
-<br>
-<input type="number" id="numero" value="300">
-<br>
-<label for="email">rotulo paar email</label>
-<br>
-<input type="email" id="email" placeholder="exemplo@gmail.com">
- <br>
+    <main>
+    <section id="listas">
+        <ul<h2>apresentaçao das listas</h2>
 
- <label for="senha">rotulo para senha</label>
-<br>
-<input type="password" id="senha" placeholder="use uma senha segura">
-<br>
-<label for="f">exemplo caixa de selecao</label>
-<br>
-<input type="checkbox" name="selecao" id="f" value="lojafeminino">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident ex officia at ratione doloremque,
+        soluta ipsum error maiores omnis quidem nihil laborum culpa ab! At necessitatibus ipsam aperiam nobis aut.</p>
+        
+        <p>lista ordenadada</p>
+        
+        <ol type="A">
+           <li>coisa</li>
+           <li>coisa</li>
+           <li>coisa</li>
+           <li>segunda coisa</li>
+        </ol>>coisa</ul>
+           <ul>coisa</ul>
+           <ul>coisa</ul>
 
-<label for="f">loja feminina</label>
-<br>
-<input type="checkbox" name="selecao" id="m" value="lojamasculino">
+    </section>
 
-<label for="m">loja departamento masculino</label>
+    <section id="tabelas">
+        <h3>Apresentação Tabelas</h2>
 
-<label for="">exemplo de selecao unica</label>
-<br>
-<input type="radio" name="selecaounica" id="um" value="1">
-<label for="um"></label>
+            <table>
 
-<label for="um">primeira opcao</label>
-<br>
-<input type="radio" name="selecaounica2" id="dois">
-<label for="dois">segunda opcao</label>
-<br>
-<label for="testeselect">selecao por lista</label>
-<br>
-<select name="testeselect" id="testeselect">
-<option value="1" disabled>um</option>
-<option value="2">dois</option>
-<option value="3">tres</option>
+                <!-- título das colunas -->
+                <th>Coluna1</th>
+                <th>Coluna2</th>
+                <th>Coluna3</th>
+                <!-- informações da tabela -->
+                <tr>
+                    <td>Info Linha1 Col1</td>
+                    <td>Info Linha1 Col2</td>
+                    <td>Info Linha1 Col3</td>
+                </tr>
+
+                <tr>
+                    <td>Info Linha2 Col1</td>
+                    <td>Info Linha 2 Col2</td>
+                    <td>Info Linha 2 Col3</td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">Info linha3 Col1/2</td>
+                    <td>Info linha3 Col3</td>
+                </tr>
+
+                <tr>
+
+                    <td colspan="2">Info linha3 Col1/2</td>
+                        <td>Info linha3 Col3</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2">Info Linha4/5 Col1</td>
+                        <td>Info Linha4 Col2</td>
+                        <td>Info Linha4 Col3</td>
+                    </tr>
+
+                    <tr>
+                        <td>Info Linha 5 Col1</td>
+                        <td>Info Linha 5 Col2</td>
+                    </tr>
+
+                </table>
+        </section>
+     <section id="formularios">
+            <h2>Apresentação Formulários</h2>
+
+            <form>
+
+                <label for="meuID">
+                    Rótulo da informação a ser inserida
+                </label>
+                <br>
+                <input type="text" id="meuID">
+
+                <br>
+                <label for="numero">
+                    Rótulo para números
+                </label>
+                <br>
+                <input type="number" id="numero" value="1000">
+
+                <br>
+                <label for="email">Rótulo para e-mail</label>
+                <br>
+                <input type="email" name="" id="email" placeholder="exemplo@gmail.com">
+
+                <br>
+                <label for="senha">Rótulo para Senha</label>
+                <br>
+                <input type="password" name="" id="senha">
+
+                <br>
+                <label for="">Exemplo Caixa de Seleção</label>
+                <br>
+                <input type="checkbox" name="selecao" id="f" value="LojaFeminino">
+                <label for="f">Loja Departamento Feminino</label>
+                <br>
+
+                <input type="checkbox" name="selecao" id="m" value="LojaMasculino">
+                <label for="m">Loja Departamento Masculino</label>
+                <br>
+                <label for="">Exemplo de seleção única</label>
+                <br>
+                <input type="radio" name="selecaoUnica" id="um" value="1">
+                <label for="um">Primeira opção</label>
+                <input type="radio" name="selecaoUnica" id="dois" value="2">
+                <label for="dois">Segunda opção</label>
+
+                <br>
+                <label for="testeSelect">Seleção por lista</label>
+                <br>
+                <select name="testeSelect" id="testeSelect">
+                    <option value="1" disabled>Um</option>
+                    <option value="2">Dois</option>
+                    <option value="3">Três</option>
+                </select>
+
+                <br>
+                <textarea name="" id="" cols="30" rows="10" placeholder="xingue aqui"></textarea>
+
+            </form>
+     </section>
+
+    <section id="divisoes">
 
 
-</select>
-<br>
 
-<textarea name="" id="" cols="30" rows="10" placeholder="xingue aqui"></textarea>
+        
+    </section>
+
+    <section>
+        <h2>Aplicação Flex box</h2>
+
+        <div class="container">
+
+            <div class="itemFlex vermelho">1</div>
+            <div class="itemFlex verde">2</div>
+            <div class="itemFlex azul">3</div>
+
+        </div>
+    </section>
+    </main>
+
+<footer>
 
 
-</form>
-
-
-
+</footer>
 </body>
 </html>
